@@ -25,7 +25,6 @@ public class CsvRtpParser {
         br.readLine(); // skip CSV header
 
         while ((line = br.readLine()) != null) {
-            System.out.println(line);
             // Split CSV safely (handles quoted commas)
             String[] fields = line.split("\",\"");
 
